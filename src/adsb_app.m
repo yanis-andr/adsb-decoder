@@ -1,7 +1,7 @@
 function [listOfPlanes, durees] = adsb_app(source, nb_buffers)
 %% ADSB Application
 % Adapté du squelette d'application fourni avec le sujet TS229
-% (TS229 course repository) : ajout du rejeu des enregistrements, du
+% (dépôt public du cours TS229) : ajout du rejeu des enregistrements, du
 % numéro de buffer, de la position des trames et de la mesure des durées.
 % adsb_app ou adsb_app('radio') : radio logicielle de l'école (get_buffer),
 %   boucle sans fin ;

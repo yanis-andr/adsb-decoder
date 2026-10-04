@@ -342,7 +342,7 @@ def construire(messages, avions, tampons, t1, t4, matlab, Fse=4, Rs=4e6):
     return {
         "version": VERSION,
         "source": {
-            "enregistrements": "data/buffers.mat du sujet TS229 (TS229 course repository) : 9 buffers de 0,5 s "
+            "enregistrements": "data/buffers.mat du sujet TS229 : 9 buffers de 0,5 s "
                                "reçus par la radio logicielle de l'ENSEIRB-Matmeca",
             "chaine": "portage Python de la chaîne MATLAB des étudiants, égal au MATLAB bloc par bloc",
         },

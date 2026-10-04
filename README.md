@@ -2,9 +2,9 @@
 
 Airliners broadcast their identity, position, altitude and speed in the clear, on 1090 MHz. This is ADS-B. This repository recovers those messages from raw recordings of a software-defined radio: it finds the frames in the signal, reads the bits, checks them with the CRC, decodes the fields and places the aircraft on a map. The chain is written in MATLAB, then ported to Python and checked block by block against the MATLAB version.
 
-**Pair project ENSEIRB-MATMECA, autumn 2025. Completed and ported to Python afterwards by Yanis André.**
+**Pair project, ENSEIRB-MATMECA, autumn 2025. Completed and ported to Python afterwards by Yanis André.**
 
-The subject is the TS229 digital communications project of ENSEIRB-MATMECA. Its statement, application skeleton, protected reference functions and recordings are public at [TS229 course repository](https://TS229 course repository). They are not redistributed here (see [Get the subject files](#get-the-subject-files)).
+The subject is the TS229 digital communications project of ENSEIRB-MATMECA. Its statement, application skeleton, protected reference functions and recordings are public in the course's repository (TS229). They are not redistributed here (see [Get the subject files](#get-the-subject-files)).
 
 ## Results
 
@@ -85,7 +85,7 @@ Only the 5 tests that compare with MATLAB outputs computed on the subject's data
 The MATLAB chain needs the subject's skeleton (aircraft class, map, radio client) and its protected reference functions for the checks, and both chains need the recordings. From the root of this repository:
 
 ```bash
-git clone https://TS229 course repository.git ../TS229
+# clone the TS229 course repository into ../TS229
 rsync -a --ignore-existing --exclude 'Tests/' ../TS229/src/ src/
 mkdir -p data
 cp ../TS229/data/adsb_msgs.mat ../TS229/data/buffers.mat data/
@@ -138,8 +138,8 @@ After the pair project, the following was done:
 
 ## Credits
 
-- Pair project ENSEIRB-MATMECA, autumn 2025. Completed and ported to Python afterwards by Yanis André.
-- Subject, recordings, application skeleton and protected reference functions: TS229 course, ENSEIRB-MATMECA, [TS229 course repository](https://TS229 course repository). `adsb_app.m` is adapted from the skeleton. The PHY and MAC functions, `process_buffer.m` and `update_liste_avion.m` keep the signatures given by the subject, with bodies written by the students. The files supplied by the subject and left unchanged are not included.
+- Pair project, ENSEIRB-MATMECA, autumn 2025. Completed and ported to Python afterwards by Yanis André.
+- Subject, recordings, application skeleton and protected reference functions: TS229 course, ENSEIRB-MATMECA, the course's public repository (TS229). `adsb_app.m` is adapted from the skeleton. The PHY and MAC functions, `process_buffer.m` and `update_liste_avion.m` keep the signatures given by the subject, with bodies written by the students. The files supplied by the subject and left unchanged are not included.
 - ADS-B messages are broadcast in the clear by aircraft.
 
 Contact: contact@yanis-andre.fr
