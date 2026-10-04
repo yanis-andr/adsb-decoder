@@ -1,0 +1,32 @@
+# Subject files (TS229 course repository): fetched locally, never committed
+data/
+*.p
+src/Client/get_buffer.m
+src/Client/javaDataReader/
+src/General/@Avion/
+src/General/affiche_carte.m
+src/General/cprintf.m
+src/General/*.png
+
+# Figures drawn on the subject's background map (written by task8 and the task 6 and 9 scripts)
+docs/figures/tache6_trajectoire.png
+docs/figures/tache8_carte.png
+docs/figures/tache8_carte_large.png
+docs/figures/tache9_rejeu.png
+
+# Outputs computed from the recordings
+python/export/
+python/tests/donnees/blocs.mat
+python/tests/donnees/buffers_reference.mat
+
+# MATLAB
+*.asv
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+
+# System
+.DS_Store
